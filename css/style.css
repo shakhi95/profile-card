@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "nazanin";
+  src: url("../fonts/Nazanin.eot?#") format("eot"),
+    url("../fonts/Nazanin.ttf") format("truetype"),
+    url("../fonts/Nazanin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "nazanin";
+  direction: rtl;
+  text-align: right;
+  background-color: hsl(185, 75%, 39%);
+  color: hsl(229, 23%, 23%);
+  overflow: hidden;
+
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 35vh, left 50vw top 45vh;
+}
+
+.img-top {
+  position: absolute;
+  top: -70%;
+  left: -25%;
+}
+
+.img-bottum {
+  position: absolute;
+  bottom: -95%;
+  right: -20%;
+}
+
+.card {
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 7px 8px 1px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 7px 8px 1px rgba(0, 0, 0, 0.27);
+}
+
+.card .pattern {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card .photo {
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-top: -48px;
+}
+
+.card .title {
+  margin: 10px 0 5px 0;
+}
+
+.card .age {
+  margin: 0 10px;
+  color: hsl(227, 10%, 46%);
+}
+
+.card .city {
+  margin: 5px 0 20px 0;
+  color: rgb(139, 156, 170);
+}
+
+.card .line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(198, 198, 199);
+}
+
+.card .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .row .col h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.card .row .col h5 {
+  color: rgb(139, 156, 170);
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
